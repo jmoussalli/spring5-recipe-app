@@ -10,3 +10,5 @@ public class Spring5RecipeAppApplication {
 		SpringApplication.run(Spring5RecipeAppApplication.class, args);
 	}
 }
+
+

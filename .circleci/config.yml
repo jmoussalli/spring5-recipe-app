@@ -18,7 +18,7 @@ jobs:
           at: ./target
       - run: |
           ./mvnw \
-          -Dtest=$(for file in $(circleci tests glob "src/test/**/**.java" \
+          -Dtest=$(for file in $(circleci tests glob "src/test/**/**/**IT.java" \
           | circleci tests split --split-by=timings); \
           do basename $file \
           | sed -e "s/.java/,/"; \
